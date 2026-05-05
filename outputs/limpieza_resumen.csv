@@ -1,0 +1,16 @@
+metrica,valor
+dataset,bank-additional-full.csv
+ruta_original,data\raw\bank-additional-full.csv
+filas_inicial,41188
+columnas_inicial,21
+filas_final,41188
+columnas_final,48
+duplicados_inicial,12
+columnas_con_unknown_inicial,6
+estrategia_faltantes,unknown->NaN; moda en categóricas; mediana en pdays_clean
+estrategia_pdays,999->NaN en pdays_clean; was_previously_contacted; eliminar pdays
+duration,Eliminada por fuga de información
+outliers,"IQR cap: age,campaign,previous,pdays_clean; macros solo escalados"
+codificacion,y 0/1; get_dummies drop_first en categóricas
+escalado,StandardScaler en numéricas excepto y
+archivo_procesado,data\processed\bank_cleaned.csv
